@@ -9,7 +9,7 @@ import {
 import React, { Component } from 'react';
 import logo from './logo192.png';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link,
@@ -40,10 +40,10 @@ export default class Header extends Component {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/about">About us</Nav.Link>
-                <Nav.Link href="/contacts">Contacts</Nav.Link>
-                <Nav.Link href="/blog">Blog</Nav.Link>
+                <Nav.Link href="./">Home</Nav.Link>
+                <Nav.Link href="./#/about">About us</Nav.Link>
+                <Nav.Link href="./#/contacts">Contacts</Nav.Link>
+                <Nav.Link href="./#/blog">Blog</Nav.Link>
               </Nav>
               <Form inline>
                 <FormControl
